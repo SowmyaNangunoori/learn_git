@@ -1,0 +1,12 @@
+[Unit]
+Description=uWSGI instance to serve project
+After=network.target
+
+[Service]
+User=azureuser
+WorkingDirectory=/home/azureuser/project
+Environment="PATH=/home/azureuser/project/projectenv/bin"
+ExecStart=/home/azureuser/project/projectenv/bin/uwsgi --ini project.ini
+
+[Install]
+WantedBy=multi-user.target
