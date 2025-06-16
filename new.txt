@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-=======
-inserted a text
-
->>>>>>> parent of 9adb955 (added a line)
+hi
